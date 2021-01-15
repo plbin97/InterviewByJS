@@ -20,12 +20,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cc95cc7d-696d-4c0d-a39c-8ba195b21b18" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/example.mjs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/example.readme.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/example.test.mjs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/honeywell-interview/asciiEncodedString.mjs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/honeywell-interview/asciiEncodedString.readme.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/honeywell-interview/asciiEncodedString.test.mjs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
@@ -141,7 +135,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1610674332150</updated>
-      <workItem from="1610674333436" duration="13356000" />
+      <workItem from="1610674333436" duration="13462000" />
     </task>
     <servers />
   </component>

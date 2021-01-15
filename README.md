@@ -3,7 +3,7 @@ Interview question case that answered by JavaScript
 
 #### Environment
 
-It requires NodeJS (1.14.15+)
+It requires `NodeJS (1.14.15+)`
 
 `Webstorm` is recommended. 
 
