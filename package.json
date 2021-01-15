@@ -1,0 +1,21 @@
+{
+  "name": "interviewbyjs",
+  "version": "1.0.0",
+  "description": "Interview question that answered by JavaScript",
+  "scripts": {
+    "test": "mocha src/*/*.test.mjs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/plbin97/InterviewByJS.git"
+  },
+  "author": "Linbin Pang",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/plbin97/InterviewByJS/issues"
+  },
+  "homepage": "https://github.com/plbin97/InterviewByJS#readme",
+  "dependencies": {
+    "mocha": "^8.2.1"
+  }
+}
