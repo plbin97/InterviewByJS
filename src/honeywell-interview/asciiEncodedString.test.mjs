@@ -1,5 +1,5 @@
 import * as answers from './asciiEncodedString.mjs';
-import assert from 'assert';
+import testingKitsForEachCase from "../../tester/testingKitsForEachCase.mjs";
 const testParasAndExpectedReturns = [
     {
         para: ["701011792823411101701997927"],
@@ -19,12 +19,5 @@ const testParasAndExpectedReturns = [
 ];
 
 describe("asciiEncodedString", () => {
-    for (let answer in answers) {
-        it(answer,  () => {
-            for (let testParasAndExpectedReturn of testParasAndExpectedReturns) {
-                let errMsg = "\n" + testParasAndExpectedReturn.msgIfErr + "\nInput parameters: " + testParasAndExpectedReturn.para.join(",");
-                assert.strictEqual(answers[answer](...testParasAndExpectedReturn.para), testParasAndExpectedReturn.expectedReturn, errMsg);
-            }
-        });
-    }
+    testingKitsForEachCase(answers, testParasAndExpectedReturns);
 });
