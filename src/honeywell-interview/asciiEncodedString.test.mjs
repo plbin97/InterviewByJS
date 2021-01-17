@@ -1,5 +1,5 @@
 import * as answers from './asciiEncodedString.mjs';
-import testingKitsForEachCase from "../../tester/testingKitsForEachCase.mjs";
+import testingKitForEachCase from "../../tester/testingKitForEachCase.mjs";
 const testParasAndExpectedReturns = [
     {
         para: ["701011792823411101701997927"],
@@ -19,5 +19,5 @@ const testParasAndExpectedReturns = [
 ];
 
 describe("asciiEncodedString", () => {
-    testingKitsForEachCase(answers, testParasAndExpectedReturns);
+    testingKitForEachCase(answers, testParasAndExpectedReturns);
 });

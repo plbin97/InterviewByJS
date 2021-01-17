@@ -1,5 +1,5 @@
 import * as answers from './isPossiblePath.mjs';
-import testingKitsForEachCase from "../../tester/testingKitsForEachCase.mjs";
+import testingKitForEachCase from "../../tester/testingKitForEachCase.mjs";
 const testParasAndExpectedReturns = [
     {
         para: [1,4,5,9],
@@ -19,5 +19,5 @@ const testParasAndExpectedReturns = [
 ];
 
 describe("isPossiblePath", () => {
-    testingKitsForEachCase(answers, testParasAndExpectedReturns);
+    testingKitForEachCase(answers, testParasAndExpectedReturns);
 });

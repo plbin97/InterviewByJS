@@ -8,7 +8,7 @@ import v8 from 'v8';
  * @param answers{Object}
  * @param testParasAndExpectedReturns{Array}
  */
-let testingKitsForEachCase = (answers, testParasAndExpectedReturns) => {
+let testingKitForEachCase = (answers, testParasAndExpectedReturns) => {
     for (let answer in answers) {
         it(answer,  () => {
             console.log("\nTesting for function \"" + answer + "\"\n")
@@ -28,7 +28,7 @@ let testingKitsForEachCase = (answers, testParasAndExpectedReturns) => {
     }
 }
 
-export default testingKitsForEachCase;
+export default testingKitForEachCase;
 
 
 let cloneObject = (obj) => {

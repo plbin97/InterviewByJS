@@ -1,6 +1,6 @@
 import * as answers from './94.binaryTreeInorderTraversal.mjs';
 import TreeNode from "../lib/TreeNode.mjs";
-import testingKitsForEachCase from "../../tester/testingKitsForEachCase.mjs";
+import testingKitForEachCase from "../../tester/testingKitForEachCase.mjs";
 
 let node3 = new TreeNode(3);
 let node4 = new TreeNode(4);
@@ -29,5 +29,5 @@ const testParasAndExpectedReturns = [
 
 
 describe("BinaryTree Inorder Traversal", () => {
-    testingKitsForEachCase(answers, testParasAndExpectedReturns);
+    testingKitForEachCase(answers, testParasAndExpectedReturns);
 });
