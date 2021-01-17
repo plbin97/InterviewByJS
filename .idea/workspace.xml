@@ -20,14 +20,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cc95cc7d-696d-4c0d-a39c-8ba195b21b18" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/leetcode/94.binaryTreeInorderTraversal.mjs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/94.binaryTreeInorderTraversal.readme.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/94.binaryTreeInorderTraversal.test.mjs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lib/TreeNode.mjs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tester/testingKitsForEachCase.mjs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/honeywell-interview/asciiEncodedString.test.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/src/honeywell-interview/asciiEncodedString.test.mjs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/honeywell-interview/isPossiblePath.test.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/src/honeywell-interview/isPossiblePath.test.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/94.binaryTreeInorderTraversal.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/94.binaryTreeInorderTraversal.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tester/testingKitsForEachCase.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/tester/testingKitsForEachCase.mjs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,7 +68,7 @@
       <recent name="C:\Users\LinbinPang\Documents\InterviewByJS\src\honeywell-interview" />
     </key>
   </component>
-  <component name="RunManager" selected="Mocha.isPossiblePath (1)">
+  <component name="RunManager" selected="Mocha.BinaryTree Inorder Traversal">
     <configuration name="94.binaryTreeInorderTraversal.mjs" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/src/leetcode/94.binaryTreeInorderTraversal.mjs" working-dir="$PROJECT_DIR$/src/leetcode">
       <method v="2" />
     </configuration>
@@ -142,10 +137,10 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Mocha.isPossiblePath (1)" />
-        <item itemvalue="Mocha.asciiEncodedString" />
         <item itemvalue="Mocha.BinaryTree Inorder Traversal" />
         <item itemvalue="Node.js.94.binaryTreeInorderTraversal.mjs" />
+        <item itemvalue="Mocha.isPossiblePath (1)" />
+        <item itemvalue="Mocha.asciiEncodedString" />
         <item itemvalue="Node.js.test.mjs" />
       </list>
     </recent_temporary>
@@ -160,7 +155,8 @@
       <updated>1610674332150</updated>
       <workItem from="1610674333436" duration="15121000" />
       <workItem from="1610782292405" duration="1710000" />
-      <workItem from="1610830114607" duration="7985000" />
+      <workItem from="1610830114607" duration="8157000" />
+      <workItem from="1610845295063" duration="4906000" />
     </task>
     <servers />
   </component>
@@ -188,26 +184,26 @@
       <screen x="-3840" y="0" width="2560" height="1400" />
     </state>
     <state x="-2381" y="639" key="FileChooserDialogImpl/0.0.1920.1040/-3840.0.2560.1400@-3840.0.2560.1400" timestamp="1610679807388" />
-    <state width="1640" height="240" key="GridCell.Tab.0.bottom" timestamp="1610839681689">
+    <state width="1640" height="240" key="GridCell.Tab.0.bottom" timestamp="1610850278479">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1641" height="241" key="GridCell.Tab.0.bottom/0.0.1920.1040/-3840.0.2560.1400@-3840.0.2560.1400" timestamp="1610686670149" />
-    <state width="1640" height="240" key="GridCell.Tab.0.bottom/0.0.1920.1040/-3840.0.2560.1400@0.0.1920.1040" timestamp="1610839681689" />
-    <state width="1640" height="240" key="GridCell.Tab.0.center" timestamp="1610839681689">
+    <state width="1640" height="240" key="GridCell.Tab.0.bottom/0.0.1920.1040/-3840.0.2560.1400@0.0.1920.1040" timestamp="1610850278479" />
+    <state width="1640" height="240" key="GridCell.Tab.0.center" timestamp="1610850278479">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1641" height="241" key="GridCell.Tab.0.center/0.0.1920.1040/-3840.0.2560.1400@-3840.0.2560.1400" timestamp="1610686670148" />
-    <state width="1640" height="240" key="GridCell.Tab.0.center/0.0.1920.1040/-3840.0.2560.1400@0.0.1920.1040" timestamp="1610839681689" />
-    <state width="1640" height="240" key="GridCell.Tab.0.left" timestamp="1610839681689">
+    <state width="1640" height="240" key="GridCell.Tab.0.center/0.0.1920.1040/-3840.0.2560.1400@0.0.1920.1040" timestamp="1610850278479" />
+    <state width="1640" height="240" key="GridCell.Tab.0.left" timestamp="1610850278479">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1641" height="241" key="GridCell.Tab.0.left/0.0.1920.1040/-3840.0.2560.1400@-3840.0.2560.1400" timestamp="1610686670148" />
-    <state width="1640" height="240" key="GridCell.Tab.0.left/0.0.1920.1040/-3840.0.2560.1400@0.0.1920.1040" timestamp="1610839681689" />
-    <state width="1640" height="240" key="GridCell.Tab.0.right" timestamp="1610839681689">
+    <state width="1640" height="240" key="GridCell.Tab.0.left/0.0.1920.1040/-3840.0.2560.1400@0.0.1920.1040" timestamp="1610850278479" />
+    <state width="1640" height="240" key="GridCell.Tab.0.right" timestamp="1610850278479">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1641" height="241" key="GridCell.Tab.0.right/0.0.1920.1040/-3840.0.2560.1400@-3840.0.2560.1400" timestamp="1610686670149" />
-    <state width="1640" height="240" key="GridCell.Tab.0.right/0.0.1920.1040/-3840.0.2560.1400@0.0.1920.1040" timestamp="1610839681689" />
+    <state width="1640" height="240" key="GridCell.Tab.0.right/0.0.1920.1040/-3840.0.2560.1400@0.0.1920.1040" timestamp="1610850278479" />
     <state width="1640" height="299" key="GridCell.Tab.1.bottom" timestamp="1610837721234">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

@@ -1,4 +1,6 @@
 import assert from "assert";
+import v8 from 'v8';
+
 
 /**
  * This function would be called by testing of each question case.
@@ -11,9 +13,10 @@ let testingKitsForEachCase = (answers, testParasAndExpectedReturns) => {
         it(answer,  () => {
             console.log("\nTesting for function \"" + answer + "\"\n")
             for (let testParasAndExpectedReturn of testParasAndExpectedReturns) {
-                console.log("Input: " + testParasAndExpectedReturn.para)
-                let errMsg = "\n" + testParasAndExpectedReturn.msgIfErr + "\nInput parameters: " + testParasAndExpectedReturn.para.join(",");
-                let returnResult = answers[answer](...testParasAndExpectedReturn.para);
+                let clonedParameters = cloneObject(testParasAndExpectedReturn.para); // Environmental isolation
+                console.log("Input: " + clonedParameters)
+                let errMsg = "\n" + testParasAndExpectedReturn.msgIfErr + "\nInput parameters: " + clonedParameters.join(",");
+                let returnResult = answers[answer](...clonedParameters);
                 if (returnResult === undefined) {
                     throw new Error("Undefined return for function \"" + answer + "\"")
                 }
@@ -26,3 +29,9 @@ let testingKitsForEachCase = (answers, testParasAndExpectedReturns) => {
 }
 
 export default testingKitsForEachCase;
+
+
+let cloneObject = (obj) => {
+    let bufferForClone = v8.serialize(obj);
+    return v8.deserialize(bufferForClone);
+}
