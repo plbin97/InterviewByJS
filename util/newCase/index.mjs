@@ -1,5 +1,5 @@
 import displayUsage from "./displayUsage.mjs";
-import {caseFilesExisted} from "./filesHandle.mjs";
+import {caseFilesExisted, fileNameCheck} from "./filesHandle.mjs";
 import readCaseNameFromUser from "./readCaseNameFromUser.mjs";
 
 (async () => {
@@ -9,16 +9,18 @@ import readCaseNameFromUser from "./readCaseNameFromUser.mjs";
         await displayUsage();
         process.exit(0);
     }
+    await fileNameCheck(parameters[2])
     if (await caseFilesExisted(parameters[2])) {
         console.log('\x1B[36m%s\x1B[0m', "Case files `" + parameters[2] + "` existed, please use another filename. ")
         process.exit(0);
     }
-
     let caseName = await readCaseNameFromUser().catch((reason) => {
-        console.log(reason);
+        console.log("");
+        console.log("\x1B[31m%s\x1B[0m", reason);
         process.exit(0);
     })
-    console.log(caseName);
+
+
 
 
 
