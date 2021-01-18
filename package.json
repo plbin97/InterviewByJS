@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "description": "Interview question that answered by JavaScript",
   "scripts": {
-    "test": "mocha src/*/*.test.mjs"
+    "test": "mocha src/*/*.test.mjs",
+    "new": "node ./util/newCase/index.mjs"
   },
   "repository": {
     "type": "git",

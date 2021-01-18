@@ -1,5 +1,5 @@
 import * as answers from './example.mjs';
-import assert from 'assert';
+import testingKitForEachCase from "../tester/testingKitForEachCase.mjs";
 
 // Put the testing parameters here
 const testParasAndExpectedReturns = [
@@ -17,12 +17,5 @@ const testParasAndExpectedReturns = [
 
 
 describe("example", () => {
-    for (let answer in answers) {
-        it(answer,  () => {
-            for (let testParasAndExpectedReturn of testParasAndExpectedReturns) {
-                let errMsg = "\n" + testParasAndExpectedReturn.msgIfErr + "\nInput parameters: " + testParasAndExpectedReturn.para.join(",");
-                assert.strictEqual(answers[answer](...testParasAndExpectedReturn.para), testParasAndExpectedReturn.expectedReturn, errMsg);
-            }
-        });
-    }
+    testingKitForEachCase(answers, testParasAndExpectedReturns);
 });

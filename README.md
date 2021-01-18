@@ -7,10 +7,14 @@ It requires `NodeJS (1.14.15+)`
 
 `Webstorm` is recommended. 
 
-After you download/clone, please install dependencies: 
+Install dependencies: 
 ```
 npm install
 ```
+
+<hr>
+
+All the interview question cases are located in `/src/*`
 
 <hr>
 
