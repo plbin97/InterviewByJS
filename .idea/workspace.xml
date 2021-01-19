@@ -20,12 +20,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cc95cc7d-696d-4c0d-a39c-8ba195b21b18" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/util/newCase/template/sample.mjs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/util/newCase/template/sample.readme.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/util/newCase/template/sample.test.mjs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/util/newCase/CaseFile.mjs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/util/newCase/checkFileName.mjs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/util/newCase/filesHandle.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/util/newCase/filesHandle.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/util/newCase/filesHandle.mjs" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/util/newCase/index.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/util/newCase/index.mjs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -77,7 +75,7 @@
     <configuration name="102.binaryTreeLevelOrderTraversal.mjs" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/src/leetcode/102.binaryTreeLevelOrderTraversal.mjs" working-dir="$PROJECT_DIR$/src/leetcode">
       <method v="2" />
     </configuration>
-    <configuration name="filesHandle.mjs" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/util/newCase/filesHandle.mjs" working-dir="$PROJECT_DIR$/util/newCase">
+    <configuration name="CaseFile.mjs" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/util/newCase/CaseFile.mjs" working-dir="$PROJECT_DIR$/util/newCase">
       <method v="2" />
     </configuration>
     <configuration name="File Handle" type="mocha-javascript-test-runner" temporary="true" nameIsGenerated="true">
@@ -143,7 +141,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="Mocha.File Handle" />
-        <item itemvalue="Node.js.filesHandle.mjs" />
+        <item itemvalue="Node.js.CaseFile.mjs" />
         <item itemvalue="Mocha.example" />
         <item itemvalue="Mocha.Same Tree (1)" />
         <item itemvalue="Node.js.102.binaryTreeLevelOrderTraversal.mjs" />
@@ -165,6 +163,8 @@
       <workItem from="1610926088947" duration="7560000" />
       <workItem from="1610933701065" duration="8122000" />
       <workItem from="1610941860886" duration="3552000" />
+      <workItem from="1610948965344" duration="766000" />
+      <workItem from="1611012239926" duration="1967000" />
     </task>
     <servers />
   </component>
