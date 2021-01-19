@@ -2,6 +2,10 @@ import readline from "readline"
 
 let invalidCharList = ["?","\"", "\'", "*", "”", "‘", "<", ">", "|"];
 
+/**
+ * Read use input and return the result
+ * @returns {Promise<String>}
+ */
 export default () => {
     return new Promise((resolve, reject) => {
         const rl = readline.createInterface({

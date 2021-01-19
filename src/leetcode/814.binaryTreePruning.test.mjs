@@ -1,5 +1,7 @@
-import * as answers from './{{fileName}}.mjs';
-import testingKitForEachCase from "{{pathToTestingKit}}tester/testingKitForEachCase.mjs";
+import * as answers from './814.binaryTreePruning.mjs';
+import testingKitForEachCase from "../../tester/testingKitForEachCase.mjs";
+
+
 
 const testParasAndExpectedReturns = [
     {

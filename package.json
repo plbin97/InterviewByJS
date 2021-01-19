@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/plbin97/InterviewByJS#readme",
   "dependencies": {
+    "fs-extra": "^9.0.1",
     "mocha": "^8.2.1"
   }
 }

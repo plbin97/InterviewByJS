@@ -1,13 +1,13 @@
-import {caseFilesExisted} from "./filesHandle.mjs";
+import CaseFile from "./CaseFile.mjs";
 import path from "path";
 import assert from "assert";
 
 describe("File Handle", () => {
+    let caseFile1 = new CaseFile("example");
+    let caseFile2 = new CaseFile("something/something");
     it('File existed test', async () => {
-        let resultOfTrue = await caseFilesExisted("example");
-        assert.strictEqual(resultOfTrue, true);
-
-        let resultOfFalse = await caseFilesExisted("something/something");
-        assert.strictEqual(resultOfFalse, false);
+        assert.strictEqual(await caseFile1.caseFilesExisted(), true);
+        assert.strictEqual(await caseFile2.caseFilesExisted(), false);
     });
+
 })

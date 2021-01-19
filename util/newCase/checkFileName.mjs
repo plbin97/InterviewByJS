@@ -1,4 +1,4 @@
-let invalidCharListForFileName = ["?","\"", "\'", "*", "”", "‘", "<", ">", "|"];
+let invalidCharListForFileName = ["?","\"", "\'", "\\", "*", "”", "‘", "<", ">", "|"];
 
 /**
  *

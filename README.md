@@ -18,15 +18,21 @@ All the interview question cases are located in `/src/*`
 
 <hr>
 
-There are three files for each interview case. 
+Add new interview case: 
 
-`Something.mjs` -> Interview response
+```
+npm run new yourPath/yourFile
+```
 
-`Something.test.mjs` -> Interview response testing
+After executing the command, you are also required to input your case name, such as `Leetcode 1 Two Sum`.
 
-`Something.readme.md` -> Interview question case description. 
+It would create three new files `yourFile.mjs`, `yourFile.test.mjs`, and `yourFile.readme.md` under the folder `/src/yourPath/`. 
 
 <hr>
 
-If you want to add a new interview case, please copy `Something.mjs`, `Something.test.mjs`, and `Something.readme.md` files into any location in directory `src/*`. 
+`yourFile.mjs` -> Interview response
+
+`yourFile.test.mjs` -> Interview response testing
+
+`yourFile.readme.md` -> Interview question case description. 
 

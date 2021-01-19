@@ -20,11 +20,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cc95cc7d-696d-4c0d-a39c-8ba195b21b18" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/util/newCase/CaseFile.mjs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/util/newCase/checkFileName.mjs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/814.binaryTreePruning.mjs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/814.binaryTreePruning.readme.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/814.binaryTreePruning.test.mjs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/util/newCase/printDone.mjs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/util/newCase/readTemplate.mjs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/util/newCase/filesHandle.mjs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/util/newCase/CaseFile.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/util/newCase/CaseFile.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/util/newCase/checkFileName.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/util/newCase/checkFileName.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/util/newCase/filesHandle.test.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/util/newCase/filesHandle.test.mjs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/util/newCase/index.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/util/newCase/index.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/util/newCase/readCaseNameFromUser.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/util/newCase/readCaseNameFromUser.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/util/newCase/template/sample.test.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/util/newCase/template/sample.test.mjs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,28 +64,31 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="javascript.nodejs.core.library.configured.version" value="14.15.4" />
     <property name="javascript.nodejs.core.library.typings.version" value="14.14.21" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/util/newCase/template" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/leetcode" />
     <property name="nodejs.jest.jest_package" value="$PROJECT_DIR$/node_modules/jest" />
     <property name="nodejs.mocha.mocha_node_package_dir" value="$PROJECT_DIR$/node_modules/mocha" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\LinbinPang\Documents\InterviewByJS\util\newCase\template" />
-      <recent name="C:\Users\LinbinPang\Documents\InterviewByJS\src\leetcode" />
-      <recent name="C:\Users\LinbinPang\Documents\InterviewByJS\src" />
+    <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\LinbinPang\Documents\InterviewByJS\src\honeywell-interview" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\LinbinPang\Documents\InterviewByJS\src\leetcode" />
+      <recent name="C:\Users\LinbinPang\Documents\InterviewByJS\util\newCase\template" />
+      <recent name="C:\Users\LinbinPang\Documents\InterviewByJS\src" />
       <recent name="C:\Users\LinbinPang\Documents\InterviewByJS\src\honeywell-interview" />
     </key>
   </component>
   <component name="RunManager" selected="Mocha.File Handle">
-    <configuration name="102.binaryTreeLevelOrderTraversal.mjs" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/src/leetcode/102.binaryTreeLevelOrderTraversal.mjs" working-dir="$PROJECT_DIR$/src/leetcode">
+    <configuration name="CaseFile.mjs" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/util/newCase/CaseFile.mjs" working-dir="$PROJECT_DIR$/util/newCase">
       <method v="2" />
     </configuration>
-    <configuration name="CaseFile.mjs" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/util/newCase/CaseFile.mjs" working-dir="$PROJECT_DIR$/util/newCase">
+    <configuration name="index.mjs" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/util/newCase/index.mjs" working-dir="$PROJECT_DIR$/util/newCase">
+      <method v="2" />
+    </configuration>
+    <configuration name="readTemplate.mjs" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/util/newCase/readTemplate.mjs" working-dir="$PROJECT_DIR$/util/newCase">
       <method v="2" />
     </configuration>
     <configuration name="File Handle" type="mocha-javascript-test-runner" temporary="true" nameIsGenerated="true">
@@ -90,21 +103,6 @@
       <test-file>$PROJECT_DIR$/util/newCase/filesHandle.test.mjs</test-file>
       <test-names>
         <name value="File Handle" />
-      </test-names>
-      <method v="2" />
-    </configuration>
-    <configuration name="Same Tree (1)" type="mocha-javascript-test-runner" temporary="true" nameIsGenerated="true">
-      <node-interpreter>project</node-interpreter>
-      <node-options />
-      <mocha-package>$PROJECT_DIR$/node_modules/mocha</mocha-package>
-      <working-directory>$PROJECT_DIR$</working-directory>
-      <pass-parent-env>true</pass-parent-env>
-      <ui>bdd</ui>
-      <extra-mocha-options />
-      <test-kind>SUITE</test-kind>
-      <test-file>$PROJECT_DIR$/src/leetcode/102.binaryTreeLevelOrderTraversal.test.mjs</test-file>
-      <test-names>
-        <name value="Same Tree" />
       </test-names>
       <method v="2" />
     </configuration>
@@ -141,10 +139,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Mocha.File Handle" />
+        <item itemvalue="Node.js.readTemplate.mjs" />
+        <item itemvalue="Node.js.index.mjs" />
         <item itemvalue="Node.js.CaseFile.mjs" />
         <item itemvalue="Mocha.example" />
-        <item itemvalue="Mocha.Same Tree (1)" />
-        <item itemvalue="Node.js.102.binaryTreeLevelOrderTraversal.mjs" />
       </list>
     </recent_temporary>
   </component>
@@ -164,7 +162,7 @@
       <workItem from="1610933701065" duration="8122000" />
       <workItem from="1610941860886" duration="3552000" />
       <workItem from="1610948965344" duration="766000" />
-      <workItem from="1611012239926" duration="1967000" />
+      <workItem from="1611012239926" duration="17944000" />
     </task>
     <servers />
   </component>
@@ -192,25 +190,25 @@
       <screen x="-3840" y="0" width="2560" height="1400" />
     </state>
     <state x="-2381" y="639" key="FileChooserDialogImpl/0.0.1920.1040/-3840.0.2560.1400@-3840.0.2560.1400" timestamp="1610679807388" />
-    <state width="2539" height="240" key="GridCell.Tab.0.bottom" timestamp="1610941832091">
+    <state width="2539" height="150" key="GridCell.Tab.0.bottom" timestamp="1611040170046">
       <screen x="-3840" y="0" width="2560" height="1400" />
     </state>
-    <state width="2539" height="240" key="GridCell.Tab.0.bottom/0.0.1920.1040/-3840.0.2560.1400@-3840.0.2560.1400" timestamp="1610941832091" />
+    <state width="2539" height="150" key="GridCell.Tab.0.bottom/0.0.1920.1040/-3840.0.2560.1400@-3840.0.2560.1400" timestamp="1611040170046" />
     <state width="1640" height="240" key="GridCell.Tab.0.bottom/0.0.1920.1040/-3840.0.2560.1400@0.0.1920.1040" timestamp="1610861383528" />
-    <state width="2539" height="240" key="GridCell.Tab.0.center" timestamp="1610941832091">
+    <state width="2539" height="150" key="GridCell.Tab.0.center" timestamp="1611040170046">
       <screen x="-3840" y="0" width="2560" height="1400" />
     </state>
-    <state width="2539" height="240" key="GridCell.Tab.0.center/0.0.1920.1040/-3840.0.2560.1400@-3840.0.2560.1400" timestamp="1610941832091" />
+    <state width="2539" height="150" key="GridCell.Tab.0.center/0.0.1920.1040/-3840.0.2560.1400@-3840.0.2560.1400" timestamp="1611040170046" />
     <state width="1640" height="240" key="GridCell.Tab.0.center/0.0.1920.1040/-3840.0.2560.1400@0.0.1920.1040" timestamp="1610861383528" />
-    <state width="2539" height="240" key="GridCell.Tab.0.left" timestamp="1610941832090">
+    <state width="2539" height="150" key="GridCell.Tab.0.left" timestamp="1611040170046">
       <screen x="-3840" y="0" width="2560" height="1400" />
     </state>
-    <state width="2539" height="240" key="GridCell.Tab.0.left/0.0.1920.1040/-3840.0.2560.1400@-3840.0.2560.1400" timestamp="1610941832090" />
+    <state width="2539" height="150" key="GridCell.Tab.0.left/0.0.1920.1040/-3840.0.2560.1400@-3840.0.2560.1400" timestamp="1611040170046" />
     <state width="1640" height="240" key="GridCell.Tab.0.left/0.0.1920.1040/-3840.0.2560.1400@0.0.1920.1040" timestamp="1610861383528" />
-    <state width="2539" height="240" key="GridCell.Tab.0.right" timestamp="1610941832091">
+    <state width="2539" height="150" key="GridCell.Tab.0.right" timestamp="1611040170046">
       <screen x="-3840" y="0" width="2560" height="1400" />
     </state>
-    <state width="2539" height="240" key="GridCell.Tab.0.right/0.0.1920.1040/-3840.0.2560.1400@-3840.0.2560.1400" timestamp="1610941832091" />
+    <state width="2539" height="150" key="GridCell.Tab.0.right/0.0.1920.1040/-3840.0.2560.1400@-3840.0.2560.1400" timestamp="1611040170046" />
     <state width="1640" height="240" key="GridCell.Tab.0.right/0.0.1920.1040/-3840.0.2560.1400@0.0.1920.1040" timestamp="1610861383528" />
     <state width="1640" height="299" key="GridCell.Tab.1.bottom" timestamp="1610837721234">
       <screen x="0" y="0" width="1920" height="1040" />
