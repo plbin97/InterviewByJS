@@ -20,7 +20,7 @@ let testingKitForEachCase = (answers, testParasAndExpectedReturns) => {
                 if (returnResult === undefined) {
                     throw new Error("Undefined return for function \"" + answer + "\"")
                 }
-                assert.strictEqual(returnResult.toString(), testParasAndExpectedReturn.expectedReturn.toString(), errMsg);
+                assert.deepStrictEqual(returnResult.toString(), testParasAndExpectedReturn.expectedReturn.toString(), errMsg);
                 console.log("Passed");
                 console.log("------------------------")
             }

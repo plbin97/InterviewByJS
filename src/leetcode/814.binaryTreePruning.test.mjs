@@ -1,19 +1,34 @@
 import * as answers from './814.binaryTreePruning.mjs';
 import testingKitForEachCase from "../../tester/testingKitForEachCase.mjs";
-import TreeNode from "../lib/TreeNode";
+import TreeNode from "../lib/TreeNode.mjs";
 
-let node1 = new TreeNode(1);
-let node2 = new TreeNode(0);
-let node3 = new TreeNode(0);
-let node4 = new TreeNode(0);
-let node5 = new TreeNode(1,node2,node1);
-let node6 = new TreeNode(0, node4, node3);
-let root = new TreeNode(1, node6, node5);
+let rootInput = new TreeNode(1,
+    new TreeNode(1,
+        new TreeNode(1,
+            new TreeNode(0)
+        ),
+        new TreeNode(1)
+        ),
+    new TreeNode(0,
+        new TreeNode(0),
+        new TreeNode(1)
+    )
+    );
+let expectedOutput = new TreeNode(1,
+    new TreeNode(1,
+        new TreeNode(1),
+        new TreeNode(1)
+    ),
+    new TreeNode(0,
+        null,
+        new TreeNode(1)
+    )
+);
 
 const testParasAndExpectedReturns = [
     {
-        para: [root],
-        expectedReturn: true,
+        para: [rootInput],
+        expectedReturn: expectedOutput,
         msgIfErr: "You are idiot"
     }
 ];
