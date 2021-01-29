@@ -1,5 +1,39 @@
-
+/**
+ * This is not a good solution
+ * @param rectangles{[][]}
+ * @returns {boolean}
+ */
 export let perfectRectangle = (rectangles) => {
+
+    // Remove negative
+    let shouldPlusOnX = 0;
+    let shouldPlusOnY = 0;
+    let calculatePlus = (isX, value) => {
+        let delta = 0 - value;
+        if (isX) {
+            if (delta > shouldPlusOnX) {
+                shouldPlusOnX = delta;
+            }
+        } else {
+            if (delta > shouldPlusOnY) {
+                shouldPlusOnY = delta;
+            }
+        }
+    }
+    for (let i of rectangles) {
+        calculatePlus(true, i[0]);
+        calculatePlus(false, i[1]);
+        calculatePlus(true, i[2]);
+        calculatePlus(false, i[3]);
+    }
+    for (let i of rectangles) {
+        i[0] += shouldPlusOnX;
+        i[1] += shouldPlusOnY;
+        i[2] += shouldPlusOnX;
+        i[3] += shouldPlusOnY;
+    }
+
+    // Calculate top left
     let topLeft = [rectangles[0][0],rectangles[0][1]];
     for (let i of rectangles) {
         if (i[0] < topLeft[0]) {
@@ -10,6 +44,8 @@ export let perfectRectangle = (rectangles) => {
         }
     }
 
+
+    // Plot the graph in array
     let plots = [[0]];
     let addPlotRight = () => {
         for (let i of plots) {
@@ -40,7 +76,9 @@ export let perfectRectangle = (rectangles) => {
             }
         }
     }
-    // For debug
+
+
+    // For displaying the graph
     // for (let j = 0; j < plots.length; j ++) {
     //     let result = "";
     //     for (let i = 0; i < plots[0].length; i ++) {
@@ -49,6 +87,7 @@ export let perfectRectangle = (rectangles) => {
     //     console.log(result);
     // }
 
+    // Calculate the shape
     for (let i = topLeft[1] * 2; i < plots.length; i ++) {
         for (let j = topLeft[0] * 2; j < plots[0].length; j ++) {
             if (plots[i][j] === 0) {
@@ -57,6 +96,7 @@ export let perfectRectangle = (rectangles) => {
         }
     }
 
+    // Calculate overlap
     for (let i = topLeft[1] * 2; i < plots.length - 2; i ++) {
         for (let j = topLeft[0] * 2; j < plots[0].length - 2; j ++) {
             if (
@@ -78,5 +118,3 @@ export let perfectRectangle = (rectangles) => {
     return true;
 }
 
-let arr = [[0,0,4,1],[7,0,8,2],[5,1,6,3],[6,0,7,2],[4,0,5,1],[4,2,5,3],[2,1,4,3],[-1,2,2,3],[0,1,2,2],[6,2,8,3],[5,0,6,1],[4,1,5,2]];
-console.log(perfectRectangle(arr))
