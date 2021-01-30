@@ -1,4 +1,67 @@
 /**
+ * Clever Solution
+ * @param rectangles{[][]}
+ * @returns {boolean}
+ */
+export let cleverSolution = (rectangles) => {
+    let area = 0;
+    let topLeft = [rectangles[0][0], rectangles[0][1]];
+    let rightBottom = [rectangles[0][2], rectangles[0][3]];
+    let corners = new Set();
+    let handleCorner = (x, y) => {
+        let corner = x + " " + y;
+        if (corners.has(corner)) {
+            corners.delete(corner);
+        } else {
+            corners.add(corner);
+        }
+    }
+
+    for (let rectangle of rectangles) {
+
+        // Calculate topLeft and rightBottom
+        if (rectangle[0] < topLeft[0]) {
+            topLeft[0] = rectangle[0];
+        }
+        if (rectangle[1] < topLeft[1]) {
+            topLeft[1] = rectangle[1];
+        }
+
+        if (rectangle[2] > rightBottom[0]) {
+            rightBottom[0] = rectangle[2];
+        }
+        if (rectangle[3] > rightBottom[1]) {
+            rightBottom[1] = rectangle[3];
+        }
+
+        // Push corner into set
+        handleCorner(rectangle[0], rectangle[1]) // Top left
+        handleCorner(rectangle[2], rectangle[3]) // Right bottom
+        handleCorner(rectangle[2], rectangle[1]) // Top right
+        handleCorner(rectangle[0], rectangle[3]) // Bottom left
+
+
+        area += calculateArea(rectangle);
+    }
+
+    if (area !== calculateArea([topLeft[0], topLeft[1], rightBottom[0], rightBottom[1]])) {
+        return false;
+    }
+    return !((corners.size !== 4) ||
+        (!corners.has(topLeft[0] + " " + topLeft[1])) ||
+        (!corners.has(rightBottom[0] + " " + rightBottom[1])) ||
+        (!corners.has(rightBottom[0] + " " + topLeft[1])) ||
+        (!corners.has(topLeft[0] + " " + rightBottom[1])));
+
+}
+
+let calculateArea = (rectangle) => {
+    let width = rectangle[2] - rectangle[0];
+    let height = rectangle[3] - rectangle[1];
+    return width * height;
+}
+
+/**
  * This is not a good solution
  * @param rectangles{[][]}
  * @returns {boolean}
