@@ -85,17 +85,3 @@ export let morrisApproach = (root) => {
     }
     return result;
 }
-
-
-/*
-    For debuging
-    ---------------------------------------------------------
- */
-
-// let node3 = new TreeNode(3);
-// let node4 = new TreeNode(4);
-// let node5 = new TreeNode(5);
-// let node2 = new TreeNode(2, node4, node5);
-// let root = new TreeNode(1, node2, node3);
-//
-// console.log(usingStack(root));
