@@ -1,4 +1,0 @@
-
-export let method1 = () => {
-
-}
